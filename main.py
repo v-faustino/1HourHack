@@ -132,7 +132,7 @@ for roundNum in range(5):
         word = getWordByLength(lengths[roundNum])
 
     answer = input(f"\nRound {roundNum+1} - What rhymes with {word}: ")
-    if answer.lower() in getRhymes(answer):
+    if answer.lower() in getRhymes(word):
         print("Correct!")
         correct += 1
     else:
